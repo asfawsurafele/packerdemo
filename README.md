@@ -27,3 +27,5 @@ aws cloudformation deploy --stack-name etherpad-packer \
 --parameter-overrides AMI=ami-0038d25e927e92f41 \
 --capabilities CAPABILITY_IAM
 ```
+[!IMPORTANT]
+replace the AMI value with the value you receive from the packer build command
