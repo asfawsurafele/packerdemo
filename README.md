@@ -1,4 +1,11 @@
 # MAKE SURE YOUR AWS CLI IS CONFIGURED TO US-WEST-1
+```
+surafeleasfaw@Surafeles-MacBook-Air packer % aws configure
+AWS Access Key ID [********************]: 
+AWS Secret Access Key [********************]: 
+Default region name [us-west-1]: 
+Default output format [json]:
+```
 
 Run 'packer build etherpad.pkr.hcl' in terminal, you will be given an AMI, the output will look like:
 
