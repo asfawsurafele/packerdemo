@@ -51,3 +51,9 @@ aws cloudformation deploy --stack-name etherpad-packer \
 --capabilities CAPABILITY_IAM
 ```
 Replace the AMI value with the value you receive from the packer build command.
+
+### To delete your stack:
+```
+aws cloudformation describe-stacks --stack-name etherpad-packer \
+➥ --query "Stacks[0].Outputs[0].OutputValue" --output text
+```
