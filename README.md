@@ -20,7 +20,11 @@ for Mac:
 brew install packer
 ```
 
-Then, run: 
+Then, run:
+```
+packer init chapter15/
+```
+and
 ```
 packer build etherpad.pkr.hcl 
 ```
