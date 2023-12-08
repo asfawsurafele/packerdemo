@@ -92,3 +92,4 @@ Resources:
                     Resource: !GetAtt SSMAutomationPackerRole.Arn
             Roles: 
               - !Ref SSMAutomationPackerRole
+

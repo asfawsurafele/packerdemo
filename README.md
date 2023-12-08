@@ -1,4 +1,4 @@
-# MAKE SURE YOUR AWS CLI IS CONFIGURED TO US-WEST-1
+# MAKE SURE YOUR AWS CLI IS CONFIGURED TO US-WEST-1,
 ```
 surafeleasfaw@Surafeles-MacBook-Air packer % aws configure
 AWS Access Key ID [********************]: 
@@ -6,8 +6,30 @@ AWS Secret Access Key [********************]:
 Default region name [us-west-1]: 
 Default output format [json]:
 ```
+#  CREATE DEFAULT VPC IF YOU DONT HAVE ONE IN US-WEST-1
+```
+aws ec2 create-default-vpc
+```
 
-Run 'packer build etherpad.pkr.hcl' in terminal, you will be given an AMI, the output will look like:
+```
+aws cloudformation create-stack \
+    --stack-name iamSSMrole \
+    --template-body file://iam-ssm-role.yaml \
+    --parameters ParameterKey=PackerTemplateS3BucketLocation,ParameterValue=PackerBucketACIT3640
+```
+
+Install packer on local machine, for windows:
+```choco install packer
+```
+
+for Mac:
+```brew install packer
+```
+
+Run 
+```packer build etherpad.pkr.hcl 
+```
+in terminal, you will be given an AMI, the output will look like:
 
 
 
