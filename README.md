@@ -6,11 +6,11 @@ AWS Secret Access Key [********************]:
 Default region name [us-west-1]: 
 Default output format [json]:
 ```
-#  CREATE DEFAULT VPC IF YOU DONT HAVE ONE IN US-WEST-1
+###  CREATE DEFAULT VPC IF YOU DONT HAVE ONE IN US-WEST-1
 ```
 aws ec2 create-default-vpc
 ```
-
+# Create IAM Role
 ```
 aws cloudformation create-stack \
     --stack-name iamSSMrole \
