@@ -10,12 +10,6 @@ Default output format [json]:
 ```
 aws ec2 create-default-vpc
 ```
-# Create IAM Role
-```
-aws cloudformation create-stack \
-  --stack-name SSMiamRole \
-  --template-body file://iam-ssm-role.yaml
-```
 
 Install packer on local machine, for windows:
 ```
