@@ -43,7 +43,7 @@ If you get an error about image-block-public access, run:
 aws ec2 disable-image-block-public-access --region us-west-1'.
 ```
 
-# To deploy your customized AMI with packer
+### To deploy your customized AMI with packer
 ```
 aws cloudformation deploy --stack-name etherpad-packer \
 --template-file packer.yaml \
