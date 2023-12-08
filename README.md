@@ -13,9 +13,8 @@ aws ec2 create-default-vpc
 # Create IAM Role
 ```
 aws cloudformation create-stack \
-    --stack-name iamSSMrole \
-    --template-body file://iam-ssm-role.yaml \
-    --parameters ParameterKey=PackerTemplateS3BucketLocation,ParameterValue=PackerBucketACIT3640
+  --stack-name SSMiamRole \
+  --template-body file://iam-ssm-role.yaml
 ```
 
 Install packer on local machine, for windows:
