@@ -8,7 +8,7 @@ Resources:
     SSMAutomationPackerRole:
         Type: "AWS::IAM::Role"
         Properties:
-            RoleName: "SSMAutomationPackerCF"
+            RoleName: "ec2-ssm-core"
             ManagedPolicyArns: [
               'arn:aws:iam::aws:policy/service-role/AmazonSSMAutomationRole'
             ]
