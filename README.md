@@ -23,7 +23,7 @@ If you get an error about image-block-public access, do aws ec2 disable-image-bl
 # To deploy your customized AMI with packer
 ```
 aws cloudformation deploy --stack-name etherpad-packer \
-➥ --template-file packer.yaml
-➥ --parameter-overrides AMI=$AMI \
-➥ --capabilities CAPABILITY_IAM
+--template-file packer.yaml \
+--parameter-overrides AMI=ami-0038d25e927e92f41 \
+--capabilities CAPABILITY_IAM
 ```
