@@ -19,16 +19,15 @@ aws cloudformation create-stack \
 ```
 
 Install packer on local machine, for windows:
-```choco install packer
-```
+```choco install packer 
 
 for Mac:
 ```brew install packer
-```
+
 
 Run 
 ```packer build etherpad.pkr.hcl 
-```
+
 in terminal, you will be given an AMI, the output will look like:
 
 
